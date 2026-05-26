@@ -3,7 +3,6 @@ package com.pluralsight;
 public class Main {
     public static void main(String[] args) {
 
-        // Test Employee class
         Employee employee = new Employee(1, "Alan Brock", "APPDEV", 50.00, 41.00);
         System.out.println("Employee ID: " + employee.getEmployeeId());
         System.out.println("Employee Name: " + employee.getName());
@@ -15,8 +14,7 @@ public class Main {
         System.out.println("Employee Overtime Hours: " + employee.getOvertimeHours());
         System.out.println("=======================================================================");
 
-        // Test Reservation class
-        Reservation reservation = new Reservation("king", 3, true);
+        Reservation reservation = new Reservation("Queen", 2, true);
         System.out.println("Room Type: " + reservation.getRoomType());
         System.out.println("Price per Night: " + reservation.getPrice());
         System.out.println("Number of Nights: " + reservation.getNumberOfNights());
@@ -24,8 +22,7 @@ public class Main {
         System.out.println("Reservation Total: " + reservation.getReservationTotal());
         System.out.println("=======================================================================");
 
-        // Test Room class
-        Room room = new Room(2, 99.99);
+        Room room = new Room(2, 399.99);
         System.out.println("Number of Beds: " + room.getNumberOfBeds());
         System.out.println("Price: " + room.getPrice());
         System.out.println("Is Occupied: " + room.isOccupied());
