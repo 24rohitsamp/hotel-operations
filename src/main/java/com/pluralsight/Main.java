@@ -1,17 +1,35 @@
 package com.pluralsight;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Test Employee class
+        Employee employee = new Employee(1, "Alan Brock", "APPDEV", 50.00, 41.00);
+        System.out.println("Employee ID: " + employee.getEmployeeId());
+        System.out.println("Employee Name: " + employee.getName());
+        System.out.println("Employee Department: " + employee.getDepartment());
+        System.out.println("Employee Pay Rate: " + employee.getPayRate());
+        System.out.println("Employee Hours Worked: " + employee.getHoursWorked());
+        System.out.println("Employee Total Pay: " + employee.getTotalPay());
+        System.out.println("Employee Regular Hours: " + employee.getRegularHours());
+        System.out.println("Employee Overtime Hours: " + employee.getOvertimeHours());
+        System.out.println("=======================================================================");
+
+        // Test Reservation class
+        Reservation reservation = new Reservation("king", 3, true);
+        System.out.println("Room Type: " + reservation.getRoomType());
+        System.out.println("Price per Night: " + reservation.getPrice());
+        System.out.println("Number of Nights: " + reservation.getNumberOfNights());
+        System.out.println("Is Weekend: " + reservation.isWeekend());
+        System.out.println("Reservation Total: " + reservation.getReservationTotal());
+        System.out.println("=======================================================================");
+
+        // Test Room class
+        Room room = new Room(2, 99.99);
+        System.out.println("Number of Beds: " + room.getNumberOfBeds());
+        System.out.println("Price: " + room.getPrice());
+        System.out.println("Is Occupied: " + room.isOccupied());
+        System.out.println("Is Dirty: " + room.isDirty());
+        System.out.println("Is Available: " + room.isAvailable());
     }
 }
